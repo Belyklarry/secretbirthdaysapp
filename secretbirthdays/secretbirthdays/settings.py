@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-l)9jc!7so!7t10!i2e@!shrlsjab1mk&^3@!&n#=kx87$7c_b+'
+SECRET_KEY = 'django-insecure-+e8_5-tpnc$h^!l&xq2#q_p&-2mcdudfm_$)(rk-aw%_tn5l3+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,13 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'secretbirthdaysapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'secretbirthdaysapp',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +122,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+FUSION_AUTH_APP_ID = "d57035fe-f111-43e5-a14a-e521175475e3"
+FUSION_AUTH_CLIENT_SECRET = "SO19jTEUYNB4tU4k05HGFZkLGLETaCxqSoloBYi283I"
+FUSION_AUTH_API_KEY = "0dHct5T8WE_zfbZ4O5_d0XxK-YjczGcdmHg254LG0Ngf_H7-8FDXCLfz"
+FUSION_AUTH_BASE_URL = "http://127.0.0.1:9011"
